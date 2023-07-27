@@ -1,0 +1,24 @@
+---
+type Props = {
+  title: string;
+  tagline: string;
+  location: string;
+  period: string;
+};
+
+const { title, tagline, location, period } = Astro.props;
+---
+
+<div class="flex flex-col pl-2 my-2">
+  <div class="flex justify-between">
+    <span class="font-bold">{title}</span>
+    <span>{location}</span>
+  </div>
+  <div class="flex justify-between italic">
+    <span>{tagline}</span>
+    <span>{period}</span>
+  </div>
+  <div class="pl-4">
+    <slot />
+  </div>
+</div>

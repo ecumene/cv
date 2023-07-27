@@ -1,67 +1,68 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
-body {
-	font-family: Verdana, sans-serif;
-	margin: auto;
-	padding: 20px;
-	max-width: 65ch;
-	text-align: left;
-	background-color: #fff;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	line-height: 1.5;
-	color: #444;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-b {
-	color: #222;
-}
 a {
-	color: #3273dc;
+    text-decoration: underline;
 }
-nav a {
-	margin-right: 10px;
+
+html {
+    position: relative;
 }
-textarea {
-	width: 100%;
-	font-size: 16px;
+
+html:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
 }
-input {
-	font-size: 16px;
+
+body:before {
+    background-color: white;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: 0;
 }
-content {
-	line-height: 1.6;
+
+body > * {
+    position: relative;
+    z-index: 1;
 }
-table {
-	width: 100%;
+
+@media print {
+    .noprint {
+        visibility: hidden;
+    }
+
+    body:before {
+        display: none;
+    }
 }
-img {
-	max-width: 100%;
-	height: auto;
+
+article {
+    font-size: 10pt;
 }
-code {
-	padding: 2px 5px;
-	background-color: #f2f2f2;
+
+article h1 {
+    font-variant: small-caps;
+    font-size: 1.2em;
 }
-pre {
-	padding: 1rem;
+
+article hr {
+    margin: 0.2em 0;
+    border-color: black;
 }
-pre > code {
-	all: unset;
-}
-blockquote {
-	border: 1px solid #999;
-	color: #222;
-	padding: 2px 0px 2px 20px;
-	margin: 0px;
-	font-style: italic;
+
+article ul {
+    margin-left: 1em;
+    list-style: disc;
 }
