@@ -43,6 +43,11 @@ body > * {
         visibility: hidden;
     }
 
+    .pagebreak {
+        page-break-before: always;
+        margin-bottom: 4rem;
+    }
+
     body:before {
         display: none;
     }
@@ -65,4 +70,14 @@ article hr {
 article ul {
     margin-left: 1em;
     list-style: disc;
+}
+
+article a {
+    color: #0284c7;
+    text-decoration: underline;
+}
+
+article a:visited {
+    color: #0ea5e9;
+    text-decoration: underline;
 }

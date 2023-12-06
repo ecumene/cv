@@ -4,90 +4,59 @@ updatedDate: "Dec 6, 2023"
 ---
 
 import Section from "../../components/Section.astro";
+import PageBreak from '../../components/PageBreak.astro';
+import RowLine from '../../components/RowLine.astro';
 
 # Experience
 
 ---
 
 <Section
-  title="Full-Stack Engineer"
-  tagline="Jungle Scout - React, Ruby, Postgres, AWS CDK"
+  title="Jungle Scout"
+  tagline="Software Developer"
   location="Austin, TX (Remote)"
-  period="Mar 2023 - Dec 6 2023"
+  period="Mar 2023 - Dec 2023"
 >
-    - Worked on a team of 5 to reduce churn and expand our customer base of 55,000 users
-    - Provided regular updates of timeline to leadership and found ways to deliver in the face of setbacks
+    - Delivered features on the Billing and Membership team. Reduced churn and expanded our customer base of 55,000 users by leading customer interviews and implementing feedback.
+    - Replaced legacy code with a fresh project. Helped build and deploy a greenfield service that handles thousands of Stripe Transaction Webhooks using Serverless and TypeScript.
+    - Used a Citus PostgreSQL database. Implemented Trigram search strategies and indices for more accurate searches and better database performance with a 90% reduction in search time.
+    - Wrote Typescript CDK code using Jungle Scout's DevOps platform for deploying new services, monitors, and alarms. Participated in an on-call schedule and resolved high-priority incidents.
 </Section>
 
 <Section
-  title="Coach (Part-Time)"
-  tagline="GetCoding - Coaching React, Node.js, Git, PostgreSQL, SQLite"
-  location="St. John's, NL"
-  period="May 2021 - Present"
->
-    - 1-on-1 coaching for new developers on the weekend, helped 8 new junior engineers get hired
-</Section>
-
-<Section
-  title="Software Developer"
-  tagline="SiftMed - React, Python, MySQL, Serverless, AWS"
+  title="SiftMed"
+  tagline="Software Developer"
   location="St. John's, NL"
   period="Aug 2021 - Mar 2023"
 >
-    - Developed a scalable system for ingesting PDFs. Deployed multiple models and assisted **ML Ops**
-    - Deployed the app using Infrastructure as Code (**Terraform**)
+    - Reduced waste by importing all existing AWS resources into Terraform states to track resources
+    - Laid the foundation for a multi-tenant architecture managed through Terraform while applying SOC2 controls and being mentored by a Senior Software Developer.
+    - Setup Multi Availability Zone (AZ) Private Networking (VPC) using AWS NAT Gateway, AWS SSO, S3 Encryption and Tailscale VPN for bullet-proof security with no incidents.
+    - Built a backend using Serverless-Stack, AWS S3, Lambda, API Gateway, Cloudwatch and RDS.
+    - Utilized AWS Step Functions and Lambda to build a system for processing thousands of PDF pages uploaded in batches. Monitored the pipeline with DataDog Logs, Logs, and APM. 
 </Section>
 
 <Section
-  title="Software Developer (Part-Time Contract)"
-  tagline="NotificationAPI - React, Node.js, PostgreSQL, AWS"
+  title="GetCoding"
+  tagline="Coach (Part-Time)"
   location="St. John's, NL"
-  period="Sep 2021 - Feb 2022"
+  period="May 2021 - Present"
 >
-    - Unit tested the frontend using React Testing Library (**RTL**)
-    - Implemented a table of logs and a graph of notification flow (**Cloudwatch** + **Cognito**)
+    - Acted in the role of a Software Manager. Creating tickets, scoping projects, and scheduling 1-on-1 sessions. Sessions include code review, problem solving, and thinking like an engineer.
+    - Helped many new junior developers get hired. Taught useful hard-skills from MySQL to Web Development fundamentals and useful soft-skills such basic software architecture and debugging.
 </Section>
 
 <Section
-  title="Full Stack Developer"
-  tagline="CoLab Software - Python, Postgres, React, GraphQL, AWS"
+  title="CoLab Software"
+  tagline="Full Stack Developer"
   location="St. John's, NL"
   period="Jun 2019 - Aug 2021"
 >
-    - Made a design system from scratch, with a component library, documentation site, style guides
-    - Created a "Drive" file-system that handles 3000+ files with drag-and-drop, folder-level pagination, virtualized lists and infinite scrolling
+    - Worked with design to create a design system and a matching component library from scratch with Storybook and private Style Guide (Figma)
+    - Assisted in a large-scale frontend refactor project to replace JQuery and Global CSS Server-Side Rendering with React CSS-Modules and Client-Side Rendering.
+    - Created a "Drive" file-system feature that renders 3000+ files with drag-and-drop, folder-level pagination, virtualized lists and infinite scrolling
 </Section>
 
-# Projects
-
----
-
-<Section
-  title={`"Ask Jungle Scout" - Internal Q&A for Jungle Scout`}
-  tagline="Built for a all 200 employees of Jungle Scout to ask and answer questions"
-  location="Python, Jupyter"
-  period="June 2023"
->
-    - Ingested our Notion Knowledge Base, used OpenAI GPT-4 to make answers from the question and relevant search results
-</Section>
-
-<Section
-  title={`"Faber.gg" - Create 3D models NERFs`}
-  tagline="Deployed to Vercel using Next.js, TailwindCSS, and React-Three-Fiber"
-  location="Javascript, Web"
-  period="June 2023"
->
-    - Used Runpod.io to get coldstarts down to 0.5 seconds, and 95p latency to 7 seconds per model
-</Section>
-
-<Section
-  title={`"Sloth" - A CLI for rendering 3D models in ASCII`}
-  tagline="Written in Rust using minimal dependencies and published on crates.io"
-  location="Rust, CLI"
-  period="January 2018"
->
-    - 700 stars on [GitHub](https://github.com/ecumene/rust-sloth), 200 downloads on [crates.io](https://crates.io/crates/rendersloth)
-</Section>
 
 # Education
 
@@ -100,9 +69,99 @@ import Section from "../../components/Section.astro";
   period="2018 - 2020"
 />
 
+<PageBreak />
+
+# Technological Strengths
+
+---
+
+<RowLine title="Programming Languages">
+  Rust, TypeScript, JavaScript, Ruby, Go, HCL, SQL, Java
+</RowLine>
+
+<RowLine title="Software & Tools">
+  Node.js, Git, Terraform, CI/CD, Citus
+</RowLine>
+
+<RowLine title="Platforms & Frameworks">
+  AWS, NextJS, DigitalOcean, Docker, PostgreSQL, MySQL
+</RowLine>
+
+# Certifications
+
+---
+
 <Section
-  title="Holy Heart of Mary Highschool"
-  tagline="Won National Science Fair, participated in Robotics and Social Justice"
-  location="St. John's, NL"
-  period="2015 - 2017"
+  title="Amazon Web Services Certified Solutions Architect"
+  tagline="Amazon Web Services (AWS)"
+  location="In-Progress"
+  period="Dec 2023 - Present"
 />
+
+<Section
+  title="Amazon Web Services Certified Cloud Practitioner"
+  tagline="Amazon Web Services (AWS)"
+  location="Certificate"
+  period="Issued Dec 2021"
+/>
+
+<Section
+  title="ESET Cyber Security Awareness Training Certificate"
+  tagline="ESET North America"
+  location="Certificate"
+  period="Issued Mar 2022"
+/>
+
+# Projects
+
+---
+
+<div className="text-center my-8">
+  All my projects can be found on my GitHub: <a href="https://github.com/ecumene">GitHub Profile</a>
+</div>
+
+<Section
+  title={`"Faber.gg" - Create 3D models using NERFs`}
+  tagline="Deployed to Vercel using Next.js, TailwindCSS, and React-Three-Fiber"
+  location="Typescript, PostgreSQL, Web"
+  period="June 2023"
+>
+    - Successor to ChatCAD
+    - Deployed the Open-Source Shap-E Text-to-3D AI model using Runpod.io Endpoints infrastructure
+    - For a side-project using Cloud GPUs, cost was front of mind.
+    - Serverless GPUs make the costs on-demand and therefore low.
+</Section>
+
+<Section
+  title={`"MitchellHynes.com" - My personal website`}
+  tagline="Deployed to AWS using Serverless-Stack"
+  location="Typescript, Web"
+  period="June 2023"
+>
+    - Unique and custom style using TailwindCSS, Vector Graphics and hand-drawn assets
+    - Built with NextJS 13, React Server Components, and Cloudfront
+    - Plans to build a free [full-stack dev course](https://mitchellhynes.com/posts/fullstack-course).
+</Section>
+
+<Section
+  title={`"ChatCad" - Create 3D models using GPT-4`}
+  tagline="Deployed to Fly.io using Next.js, TailwindCSS, and React-Three-Fiber"
+  location="Typescript, MySQL, Web"
+  period="June 2023"
+>
+    - OpenSCAD can be used to write 3D CAD Models. GPT-4 is an LLM from OpenAI.
+    - Utilized the OpenAI GPT-4 API to create CAD models from a text prompt.
+    - 600 active users in 2 weeks but I had to shut it down because costs were too high.
+</Section>
+
+<Section
+  title={`"Sloth" - A CLI for rendering 3D models in ASCII`}
+  tagline="Written in Rust using minimal dependencies and published on crates.io"
+  location="Rust, CLI"
+  period="January 2018"
+>
+    - Built a command-line software rasterizer from scratch using the Rust Programming Language.
+    - Parsed 3D OBJ models and rendered them to the Command Line Interface using only text
+    - Supports multiple 3D model formats, terminals, and operating systems.
+    - Builds and deploys to Crates.io using CI/CD
+</Section>
