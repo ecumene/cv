@@ -17,10 +17,12 @@ import RowLine from '../../components/RowLine.astro';
   location="Austin, TX (Remote)"
   period="Mar 2023 - Dec 2023"
 >
-    - Delivered features on the Billing and Membership team. Reduced churn and expanded our customer base of 55,000 users by leading customer interviews and implementing feedback.
-    - Replaced legacy code with a fresh project. Helped build and deploy a greenfield service that handles thousands of Stripe Transaction Webhooks using Serverless and TypeScript.
-    - Used a Citus PostgreSQL database. Implemented Trigram search strategies and indices for more accurate searches and better database performance with a 90% reduction in search time.
-    - Wrote Typescript CDK code using Jungle Scout's DevOps platform for deploying new services, monitors, and alarms. Participated in an on-call schedule and resolved high-priority incidents.
+    - Developer on the Billing and Membership team. Maintained an international application login, fraud prevention system using Sift and Stripe billing services in 12 currencies.
+    - Helped reduce churn and expand our customer base of 50,000 users by conducting customer interviews and implementing feedback. Consistently shipped features users love.
+    - Replaced legacy code, by building and deploying a greenfield service that handles thousands of Stripe Transaction Webhooks using Serverless and TypeScript.
+    - Implemented Trigram search strategies and indices in a Citus PostgreSQL database for more accurate searches and better database performance with a 90% reduction in search time.
+    - Developed Typescript CDK code using Jungle Scout's AWS Codepipeline based DevOps platform for deploying new services, monitors, and alarms.
+    - Participated in an on-call schedule and resolved high-priority incidents.
 </Section>
 
 <Section
@@ -29,11 +31,12 @@ import RowLine from '../../components/RowLine.astro';
   location="St. John's, NL"
   period="Aug 2021 - Mar 2023"
 >
-    - Reduced waste by importing all existing AWS resources into Terraform states to track resources
-    - Laid the foundation for a multi-tenant architecture managed through Terraform while applying SOC2 controls and being mentored by a Senior Software Developer.
-    - Setup Multi Availability Zone (AZ) Private Networking (VPC) using AWS NAT Gateway, AWS SSO, S3 Encryption and Tailscale VPN for bullet-proof security with no incidents.
+    - Reduced waste by importing all existing AWS resources into Terraform states to track resources, shortening the time to ship new features and onboard customers by 90%.
+    - Laid a multi-tenant architecture foundation managed through Terraform, applying SOC2 controls.
+    - Setup Multi Availability-Zone (AZ) Private Networking (VPC) using AWS NAT Gateway, AWS SSO, S3 Encryption and Tailscale VPN for bullet-proof security resulting in no incidents.
     - Built a backend using Serverless-Stack, AWS S3, Lambda, API Gateway, Cloudwatch and RDS.
-    - Utilized AWS Step Functions and Lambda to build a system for processing thousands of PDF pages uploaded in batches. Monitored the pipeline with DataDog Logs, Logs, and APM. 
+    - Utilized AWS Step Functions and Lambda to build a system for processing thousands of PDF pages uploaded in batches.
+    - Monitored the pipeline with DataDog Logs, Logs, and APM. 
 </Section>
 
 <Section
@@ -52,9 +55,9 @@ import RowLine from '../../components/RowLine.astro';
   location="St. John's, NL"
   period="Jun 2019 - Aug 2021"
 >
-    - Worked with design to create a design system and a matching component library from scratch with Storybook and private Style Guide (Figma)
+    - Developed a design system and matching component library with Storybook and Figma.
     - Assisted in a large-scale frontend refactor project to replace JQuery and Global CSS Server-Side Rendering with React CSS-Modules and Client-Side Rendering.
-    - Created a "Drive" file-system feature that renders 3000+ files with drag-and-drop, folder-level pagination, virtualized lists and infinite scrolling
+    - Created a "Drive" file-system feature that renders 3000+ files with drag-and-drop, folder-level pagination, virtualized lists and infinite scrolling.
 </Section>
 
 
@@ -64,7 +67,7 @@ import RowLine from '../../components/RowLine.astro';
 
 <Section
   title="Memorial University"
-  tagline="Completed 2 years of an Undergraduate Degree in Computer Science"
+  tagline="Completed 2 years of an B.Sc Degree in Computer Science"
   location="St. John's, NL"
   period="2018 - 2020"
 />
@@ -117,8 +120,19 @@ import RowLine from '../../components/RowLine.astro';
 ---
 
 <div className="text-center my-8">
-  All my projects can be found on my GitHub: <a href="https://github.com/ecumene">GitHub Profile</a>
+  All my projects can be found on my GitHub Profile: <a href="https://github.com/ecumene">@ecumene</a>
 </div>
+
+<Section
+  title={`"ChatCAD" - Create 3D models using GPT-4`}
+  tagline="Deployed to Fly.io using Next.js, TailwindCSS, and React-Three-Fiber"
+  location="Typescript, MySQL, Web"
+  period="June 2023"
+>
+    - OpenSCAD can be used to write 3D CAD Models. GPT-4 is an LLM from OpenAI.
+    - Utilized the OpenAI GPT-4 API to create CAD models from a text prompt.
+    - 600 active users in 2 weeks but I had to shut it down because costs were too high.
+</Section>
 
 <Section
   title={`"Faber.gg" - Create 3D models using NERFs`}
@@ -126,7 +140,7 @@ import RowLine from '../../components/RowLine.astro';
   location="Typescript, PostgreSQL, Web"
   period="June 2023"
 >
-    - Successor to ChatCAD
+    - Successor to ChatCAD.
     - Deployed the Open-Source Shap-E Text-to-3D AI model using Runpod.io Endpoints infrastructure
     - For a side-project using Cloud GPUs, cost was front of mind.
     - Serverless GPUs make the costs on-demand and therefore low.
@@ -138,20 +152,9 @@ import RowLine from '../../components/RowLine.astro';
   location="Typescript, Web"
   period="June 2023"
 >
-    - Unique and custom style using TailwindCSS, Vector Graphics and hand-drawn assets
-    - Built with NextJS 13, React Server Components, and Cloudfront
+    - Unique and custom style using TailwindCSS, Vector Graphics and hand-drawn assets.
+    - Built with NextJS 13, React Server Components, and Cloudfront.
     - Plans to build a free [full-stack dev course](https://mitchellhynes.com/posts/fullstack-course).
-</Section>
-
-<Section
-  title={`"ChatCad" - Create 3D models using GPT-4`}
-  tagline="Deployed to Fly.io using Next.js, TailwindCSS, and React-Three-Fiber"
-  location="Typescript, MySQL, Web"
-  period="June 2023"
->
-    - OpenSCAD can be used to write 3D CAD Models. GPT-4 is an LLM from OpenAI.
-    - Utilized the OpenAI GPT-4 API to create CAD models from a text prompt.
-    - 600 active users in 2 weeks but I had to shut it down because costs were too high.
 </Section>
 
 <Section
@@ -161,7 +164,7 @@ import RowLine from '../../components/RowLine.astro';
   period="January 2018"
 >
     - Built a command-line software rasterizer from scratch using the Rust Programming Language.
-    - Parsed 3D OBJ models and rendered them to the Command Line Interface using only text
+    - Parsed 3D OBJ models and rendered them to the Command Line Interface using only text.
     - Supports multiple 3D model formats, terminals, and operating systems.
-    - Builds and deploys to Crates.io using CI/CD
+    - Builds and deploys to Crates.io using CI/CD.
 </Section>
